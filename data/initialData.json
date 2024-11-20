@@ -1,0 +1,55 @@
+[
+  {
+    "code": "rv1",
+    "name": "Rover #1",
+    "model": "car",
+    "tech": [
+      "AI",
+      "car"
+    ],
+    "status": "progress",
+    "desc": "1"
+  },
+  {
+    "code": "tfx",
+    "name": "Transformer X",
+    "model": "transformation",
+    "tech": [
+      "car",
+      "robot"
+    ],
+    "status": "active",
+    "desc": "2"
+  },
+  {
+    "code": "px1",
+    "name": "Pacifista 1",
+    "model": "humanoid",
+    "tech": [
+      "AI",
+      "robot"
+    ],
+    "status": "active",
+    "desc": "3"
+  },
+  {
+    "code": "ax8",
+    "name": "Android #8",
+    "model": "humanoid",
+    "tech": [
+      "cyborg"
+    ],
+    "status": "active",
+    "desc": "4"
+  },
+  {
+    "code": "ax7",
+    "name": "Android #7",
+    "model": "humanoid",
+    "tech": [
+      "cybord"
+    ],
+    "status": "inactive",
+    "desc": "5"
+  }
+]

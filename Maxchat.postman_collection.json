@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "85af1ba7-813c-499b-bba8-8bba57cf93d3",
+		"name": "Maxchat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27412179"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/products",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sukses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/products",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:40:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "567"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"code\": \"px1\",\n            \"name\": \"Pacifista 1\",\n            \"model\": \"humanoid\",\n            \"tech\": [\n                \"AI\",\n                \"robot\"\n            ],\n            \"status\": \"active\",\n            \"desc\": \"3\"\n        },\n        {\n            \"code\": \"ax8\",\n            \"name\": \"Android #8\",\n            \"model\": \"humanoid\",\n            \"tech\": [\n                \"cyborg\"\n            ],\n            \"status\": \"active\",\n            \"desc\": \"4\"\n        },\n        {\n            \"code\": \"ax7\",\n            \"name\": \"Android #7\",\n            \"model\": \"humanoid\",\n            \"tech\": [\n                \"cybord\"\n            ],\n            \"status\": \"inactive\",\n            \"desc\": \"5\"\n        },\n        {\n            \"code\": \"rv1\",\n            \"name\": \"Rover #1\",\n            \"model\": \"car\",\n            \"tech\": [\n                \"AI\",\n                \"car\"\n            ],\n            \"status\": \"progress\",\n            \"desc\": \"1\"\n        },\n        {\n            \"code\": \"tfx\",\n            \"name\": \"Transformer X\",\n            \"model\": \"transformation\",\n            \"tech\": [\n                \"car\",\n                \"robot\"\n            ],\n            \"status\": \"active\",\n            \"desc\": \"2\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"code\": \"1111\",\r\n        \"name\": \"1111\",\r\n        \"model\": \"1111\",\r\n        \"tech\": [\r\n            \"cybord\"\r\n            ,\"1111\"\r\n        ],\r\n        \"status\": \"1111\",\r\n        \"desc\": \"1111\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9999/products",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sukses",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"code\": \"1111\",\r\n        \"name\": \"1111\",\r\n        \"model\": \"1111\",\r\n        \"tech\": [\r\n            \"cybord\"\r\n            ,\"1111\"\r\n        ],\r\n        \"status\": \"1111\",\r\n        \"desc\": \"1111\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/products",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:43:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"success\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"code\": \"1111\",\r\n        \"name\": \"1111\",\r\n        \"model\": \"1111\",\r\n        \"tech\": [\r\n            \"cybord\"\r\n            ,\"1111\"\r\n        ],\r\n        \"status\": \"1111\",\r\n        \"desc\": \"1111\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/products",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:45:00 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "97"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 500,\n    \"message\": \"EError add product: product with code 1111 already exists\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Product by tech",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/products/tech/AI",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"products",
+						"tech",
+						"AI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product by model",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/products/model/humanoid",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"products",
+						"model",
+						"humanoid"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "suksesk",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/products/model/humanoid",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products",
+								"model",
+								"humanoid"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:36:41 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "354"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"code\": \"px1\",\n            \"name\": \"Pacifista 1\",\n            \"model\": \"humanoid\",\n            \"tech\": [\n                \"AI\",\n                \"robot\"\n            ],\n            \"status\": \"active\",\n            \"desc\": \"3\"\n        },\n        {\n            \"code\": \"ax8\",\n            \"name\": \"Android #8\",\n            \"model\": \"humanoid\",\n            \"tech\": [\n                \"cyborg\"\n            ],\n            \"status\": \"active\",\n            \"desc\": \"4\"\n        },\n        {\n            \"code\": \"ax7\",\n            \"name\": \"Android #7\",\n            \"model\": \"humanoid\",\n            \"tech\": [\n                \"cybord\"\n            ],\n            \"status\": \"inactive\",\n            \"desc\": \"5\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "failed",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/products/model/humanoid1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products",
+								"model",
+								"humanoid1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:37:07 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "113"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 500,\n    \"message\": \"Error retrieving products by model: no products found for model humanoid1\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "update base on code",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"rv1\",\r\n    \"name\": \"1\",\r\n    \"model\": \"1\",\r\n    \"tech\": [\r\n        \"AI\",\r\n        \"baru\"\r\n    ],\r\n    \"status\": \"1\",\r\n    \"desc\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9999/products/update",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"products",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "failed",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"rv11\",\r\n    \"name\": \"1\",\r\n    \"model\": \"1\",\r\n    \"tech\": [\r\n        \"AI\",\r\n        \"baru\"\r\n    ],\r\n    \"status\": \"1\",\r\n    \"desc\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/products/update",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:42:04 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 500,\n    \"message\": \"Error updating product: product not found\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "sukses",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"rv1\",\r\n    \"name\": \"1\",\r\n    \"model\": \"1\",\r\n    \"tech\": [\r\n        \"AI\",\r\n        \"baru\"\r\n    ],\r\n    \"status\": \"1\",\r\n    \"desc\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9999/products/update",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:42:24 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"success\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/products/px1",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"products",
+						"px1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sukses",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/products/px1",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products",
+								"px1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:44:13 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"success\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "failed",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9999/products/px12",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"products",
+								"px12"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 09:44:37 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 500,\n    \"message\": \"Error deleting product: product not found\",\n    \"data\": null\n}"
+				}
+			]
+		}
+	]
+}
